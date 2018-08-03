@@ -1,7 +1,6 @@
 {
   "name": "super-galactic-age-calculator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -41,5 +40,14 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xamdes/super-galactic-age-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xamdes/super-galactic-age-calculator/issues"
+  },
+  "homepage": "https://github.com/Xamdes/super-galactic-age-calculator#readme",
+  "description": ""
 }
