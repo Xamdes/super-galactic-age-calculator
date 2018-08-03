@@ -90,11 +90,20 @@ describe('Age Calculator', function()
     expect(Age.CalculateLifeExpectancy(5,10,200,"Male")).toEqual(expected);
   });
 
-  it('should test user age against life expectancy based on feet,inches,weight and biological sex of the user', function () 
+  it('should test user age against life expectancy based on feet,inches,weight and if user is male', function () 
   {
     let testAge = 27;
     let testLifeSpan = Age.CalculateLifeExpectancy(5, 10, 200, "Male");
     expected = 63;
+    temp.SetAge(testAge);
+    expect(temp.GetLifeExpectancy(testLifeSpan)).toEqual(expected);
+  });
+
+  it('should test user age against life expectancy based on feet,inches,weight and is user is female', function () 
+  {
+    let testAge = 27;
+    let testLifeSpan = Age.CalculateLifeExpectancy(5, 10, 200, "Female");
+    expected = 68;
     temp.SetAge(testAge);
     expect(temp.GetLifeExpectancy(testLifeSpan)).toEqual(expected);
   });
