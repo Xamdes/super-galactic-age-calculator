@@ -22,6 +22,9 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-jasmine-html-reporter'
     ],
+    client: {
+      captureConsole: true
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
