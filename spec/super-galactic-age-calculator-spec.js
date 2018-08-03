@@ -1,10 +1,10 @@
-import { super-galactic-age-calculator } from './../src/super-galactic-age-calculator';
+import {Age} from './../src/super-galactic-age-calculator';
 describe('Temp', function()
 {
   var temp;
 
   beforeEach(function() {
-    temp = ;
+    temp = new Age();
   });
 
   it('should show how beforeEach() works', function() {
